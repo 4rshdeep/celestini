@@ -109,48 +109,33 @@ lis2=[
 
 
 ]
+import collections
+import numpy as np
+
+def get_feature(text):
+	a = collections.Counter(text)
+	a.pop(' ', -1)
+	l = a.values()
+	s = sum(l)+0.0
+	print(100*np.array(sorted(l, reverse=True))/s)
+
+
+for l in lis:
+	print(l)
+	get_feature(l)
 
 
 # lis is for vigenere ciphers
 # lis2 is for substitution ciphers
 
-for i in lis: # change lis to lis2 for substitution ciphers
-	countarr=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-	for j in i:
-		if j==' ':
-			continue
-		else:
-			countarr[ord(j)-65]=countarr[ord(j)-65]+1
-	total = sum(countarr)+0.0
-	countarr.sort(reverse=True)
+# for i in lis: # change lis to lis2 for substitution ciphers
+# 	countarr=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+# 	for j in i:
+# 		if j==' ':
+# 			continue
+# 		else:
+# 			countarr[ord(j)-65]=countarr[ord(j)-65]+1
+# 	total = sum(countarr)+0.0
+# 	countarr.sort(reverse=True)
 
-	print "-------------------------------------------------------"
-	print i
-	
-	print int(countarr[0]/total*100),
-	print int(countarr[1]/total*100),
-	print int(countarr[2]/total*100),
-	print int(countarr[3]/total*100),
-	print int(countarr[4]/total*100),
-	print int(countarr[5]/total*100),
-	print int(countarr[6]/total*100),
-	print int(countarr[7]/total*100),
-	print int(countarr[8]/total*100),
-	print int(countarr[9]/total*100),
-	print int(countarr[10]/total*100),
-	print int(countarr[11]/total*100),
-	print int(countarr[12]/total*100),
-	print int(countarr[13]/total*100),
-	print int(countarr[14]/total*100),
-	print int(countarr[15]/total*100),
-	print int(countarr[16]/total*100),
-	print int(countarr[17]/total*100),
-	print int(countarr[18]/total*100),
-	print int(countarr[19]/total*100),
-	print int(countarr[20]/total*100),
-	print int(countarr[21]/total*100),
-	print int(countarr[22]/total*100),
-	print int(countarr[23]/total*100),
-	print int(countarr[24]/total*100),
-	print int(countarr[25]/total*100)
 
