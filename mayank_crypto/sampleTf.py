@@ -82,7 +82,7 @@ def main():
     init = tf.global_variables_initializer()
     sess.run(init)
 
-    for epoch in range(100):
+    for epoch in range(5):
         # Train with each example
         for i in range(len(train_X)):
             sess.run(updates, feed_dict={X: train_X[i: i + 1], y: train_y[i: i + 1]})
@@ -95,6 +95,14 @@ def main():
         print("Epoch = %d, train accuracy = %.2f%%, test accuracy = %.2f%%"
               % (epoch + 1, 100. * train_accuracy, 100. * test_accuracy))
 
+    
+    X_new=[[1,13.043478260869565, 10.559006211180124, 8.074534161490684, 8.074534161490684, 8.074534161490684, 6.832298136645963, 6.832298136645963, 6.832298136645963, 4.968944099378882, 4.968944099378882, 4.3478260869565215, 3.7267080745341614, 2.484472049689441, 2.484472049689441, 1.8633540372670807, 1.8633540372670807, 1.2422360248447204, 1.2422360248447204, 1.2422360248447204, 0.6211180124223602, 0.6211180124223602, 0.0, 0.0, 0.0, 0.0, 0.0]]
+    # yhat2    = forwardprop(X_new, w_1, w_2)
+    # predict2 = tf.argmax(yhat2, axis=1)
+
+    # prediction=tf.argmax(y,1)
+    # print prediction.eval(feed_dict={X: train_X},session=sess)
+    print sess.run(predict,feed_dict={X: X_new})
     sess.close()
 
 if __name__ == '__main__':
