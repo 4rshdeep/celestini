@@ -74,8 +74,8 @@ def frequency_index(text):
 	freq = getFrequencyOfText(text)
 	result = 0
 	for i, val in zip(freq, eng):
-		if i == 0:
-			continue
+# 		if i == 0:
+# 			continue
 		result += (val-i)
 	return result
 
