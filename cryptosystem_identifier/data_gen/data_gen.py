@@ -1,8 +1,9 @@
 from encrypt import *
 
-f = open("test_plain.txt", "r")
-vig = open("test_vig.txt", "w")
-ss = open("test_simple_sub.txt", "w")
+# PATH =
+f = open("./data/plain_text.txt", "r")
+vig = open("./data/train_vig.txt", "w")
+ss = open("./data/train_simple_sub.txt", "w")
 
 SS_KEY = "HKJXUBFSONMYTECZWPLDAVIQRG"
 VIG_KEY = "KEY"
