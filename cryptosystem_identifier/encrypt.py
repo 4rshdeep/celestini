@@ -11,6 +11,7 @@ def simple_subs(key, message):
             # encrypt/decrypt the symbol
             symIndex = charsA.find(symbol.upper())
             if symbol.isupper():
+#                 print(symbol)
                 translated += charsB[symIndex].upper()
             else:
                 translated += charsB[symIndex].lower()
