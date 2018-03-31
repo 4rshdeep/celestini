@@ -10,8 +10,21 @@ def mat_to_sparse(mat):
 
 
 #these are the matrices to multiply
-mat1 = [[0,2],[2,0]]
-mat2 = [[1,1],[0,2]]
+n = input("Enter the value of n: ")
+print "Input for first",n,"*",n,"matrix"
+mat1=[]
+for i in range(n):
+	print "Enter row ",i," (space seperated values)"
+	mat1.append(raw_input().split())
+	for j in range(n):
+		mat1[-1][j] = int(mat1[-1][j])
+print "Input for second",n,"*",n,"matrix"
+mat2=[]
+for i in range(n):
+	print "Enter row ",i," (space seperated values)"
+	mat2.append(raw_input().split())
+	for j in range(n):
+		mat2[-1][j] = int(mat2[-1][j])
 mat2org=mat2
 
 #get the transpose of mat2
