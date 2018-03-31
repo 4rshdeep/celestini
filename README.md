@@ -55,6 +55,7 @@ true
     * sklearn
     * matplotlib
     * seaborn
+    * jupyter
 
 ## Authors
 
