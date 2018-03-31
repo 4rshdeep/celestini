@@ -49,7 +49,7 @@ Enter elements of row  2 (space seperated)
 enter search value: 4
 true
 ```
-3. The code for question 4 is present inside the notebook `cryptosystem_identifier.ipynb`. You could view the notebook as rendered by Github (we have also added an html file `cryptosystem_identifier.html`) or else run the notebook by typing `jupyter notebook` in terminal. Open our notebook from the browser and run each segment. Our code requires the packages:
+3. The code for question 4 is present inside the notebook `cryptosystem_identifier.ipynb`. You could view the notebook as rendered by Github (we have also added an html file `cryptosystem_identifier.html` which can be viewed [here](http://www.cse.iitd.ac.in/~cs5160625/cryptosystem_identifier.html) ) or else run the notebook by typing `jupyter notebook` in terminal. Open our notebook from the browser and run each segment. Our code requires the packages:
     * tensorflow
     * numpy
     * sklearn
