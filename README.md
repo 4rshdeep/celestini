@@ -4,12 +4,12 @@ This github repository contains the solution for the the take away assignment fo
 
 ## How to check our solution?
 
-1. Begin by opening the file "something.pdf". It contains all the answers which didn't involve coding, like the MCQs and our design on solving a socio-economic problem.
+1. Begin by opening the file "answers.pdf". It contains all the answers which didn't involve coding, like the MCQs and our design on solving a socio-economic problem.
 2. The answers of question 1 are written in bold just after each question.
-3. The second question which was on sparse matrix operations had 3 parts. The answer to the first part is python code which is present inside the folder programming1. The answers to second and third part are present inside "something.pdf" itself. We haven't created a separate readme for this as we could explain it better by writing comments in the code directly.
+3. The second question which was on sparse matrix operations had 3 parts. The answer to the first part is python code which is present inside the folder programming1. The answers to second and third part are present inside "answers.pdf" itself. We haven't created a separate readme for this as we could explain it better by writing comments in the code directly.
 4. The third question has been answered in the exact same way as question 2.
-5. The fourth question had 2 parts, out of which we had to do only one. We did the first one. The code for it is written in a jupyter notebook which is present inside the folder cryptosystem_identifier. We also wanted to try the second question on Arduino, as neither of us has done robotics before and learning something new is always fun. But unfortunately, we didn't have the time to do it because of our exams.
-6. The answer to the fifth question is written in "something.pdf".
+5. The fourth question had 2 parts, out of which we had to do only one. We did the first one. The code for it is written in a jupyter notebook which is present inside the folder cryptosystem_identifier. We also wanted to try the second question on Arduino, as neither of us has done robotics before and learning answers new is always fun. But unfortunately, we didn't have the time to do it because of our exams.
+6. The answer to the fifth question is written in "answers.pdf".
 
 ### How to run our code?
 
