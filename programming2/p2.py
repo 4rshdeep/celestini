@@ -1,4 +1,4 @@
-# The matrix is assumed to be an m by n matrix (m being the rows)
+# The matrix is assumed to be an m * n matrix (m being the rows)
 m = input("enter m: ")
 n = input("enter n: ")
 
@@ -12,15 +12,13 @@ for i in range(m):
 row = m-1
 col = 0
 
-# Taking input until this point
-# lis = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]]
-
+#input taken
 
 s = input("enter search value: ")
 
 # we begin at the bottom left element, if it is equal to the search element, then we must return true here,
 # else if search element is less that that element then all the elements in that row are more than search element, hence we only need to check the upper matrix
-# similarly if search element is more than that element then all the elements in the same column above that element are useless, hence we only need to check the right matrix
+# similarly if search element is more than that element then all the elements in that column above that element are less than the search element, hence we only need to check the right matrix
 while(row>=0 and col<n):
 	if s==lis[row][col]:
 		print "true"
