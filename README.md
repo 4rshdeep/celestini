@@ -54,6 +54,7 @@ true
     * numpy
     * sklearn
     * matplotlib
+    * seaborn
 
 ## Authors
 
